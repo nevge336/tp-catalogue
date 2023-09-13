@@ -1,0 +1,25 @@
+:root{
+
+ --rouge: red;
+ 
+ --main-color:var(--rouge);
+
+
+--main-color-light:var(--rouge);
+--main-color-medium:var(--rouge);
+--main-color-dark:var(--rouge);
+
+
+--secondary-color-light:var(--rouge);
+--secondary-color-medium:var(--rouge);
+--secondary-color-dark:var(--rouge);
+
+
+--alerte-info:var(--rouge);
+--alerte-success:var(--rouge);
+--alerte-warning:var(--rouge);
+--alerte-danger:var(--rouge);
+--alerte-disabled:var(--rouge);
+
+
+}
