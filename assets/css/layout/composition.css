@@ -1,0 +1,11 @@
+/*pile verticale de contenu avec rythme */
+body {
+	display: flex;
+	flex-direction: column;
+
+}
+
+/* rythme */
+body > div > main > * + * {
+	margin-top: var(--gouttiere);
+}

@@ -1,0 +1,15 @@
+.box {
+    container-type : inline-size;
+}
+
+@container (min-width: 300px) {
+    .box p {
+        font-size: 20px
+    }
+}
+
+@container (min-width: 800px){
+    .box p {
+        font-size:30px
+    }
+}

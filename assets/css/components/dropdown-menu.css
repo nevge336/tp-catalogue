@@ -1,0 +1,26 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover {
+    background-color: lightgray;
+}
+
+.dropdown :where(div, ul) {
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    max-width: 20ch;
+    background-color: lightgrey;
+    display: block;
+    padding: 5px;
+}
+/* annule la spécificité */
+.dropdown:not(:hover) > :where(div, ul) {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.dropdown :where(div, ul) * {
+    display: block;
+}

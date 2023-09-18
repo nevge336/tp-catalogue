@@ -1,3 +1,31 @@
+/* variables */
 @import url(variable/colors.css);
 @import url(variable/spacing.css);
 @import url(variable/typo.css);
+
+
+/* component */
+@import url(components/card.css);
+@import url(components/main-navigation.css);
+@import url(components/dropdown-menu.css);
+@import url(components/trigger.css);
+@import url(components/footer.css);
+@import url(components/medallion.css);
+@import url(components/logo.css);
+@import url(components/hamburger.css);
+@import url(components/secondary-navigation.css);
+
+/* Layout */
+@import url(layout/grid.css);
+@import url(layout/prototype.css);
+@import url(layout/general.css);
+@import url(layout/composition.css);
+
+
+/*base */
+@import url(base/typo.css);
+@import url(base/utility.css);
+
+
+/*pages */
+@import url(page/catalog.css);

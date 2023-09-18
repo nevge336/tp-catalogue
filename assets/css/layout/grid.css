@@ -1,0 +1,5 @@
+/* grille de présentation auto-adaptative */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(var(--colonne), 1fr));
+}

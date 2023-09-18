@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&family=Ubuntu:wght@400;500;700&display=swap');
 
 
 :root {
-    --main-font:"Lobster Two";
-    --secondary-font: "Lato";
-    --accent-font: "Ubuntu";
+    --main-font:"Open Sans", sans-serif;
+    --secondary-font: "Spinnaker", sans-serif;
+    --accent-font: "Montserrat", sans-serif;
 
-    --text-xxl: 3.052rem;
-    --text-xl: 3.052rem;
-    --text-lg: 3.052rem;
-    --text-md: 3.052rem;
-    --text-sm: 3.052rem;
-    --text-xs: 3.052rem;
-    --text-xxs: 3.052rem;
+
+    /* @link https://utopia.fyi/type/calculator?c=320,14,1.2,1240,20,1.25,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+    --typo--1: clamp(0.73rem, calc(0.64rem + 0.47vw), 1.00rem);
+    --typo-0: clamp(0.88rem, calc(0.74rem + 0.65vw), 1.25rem);
+    --typo-1: clamp(1.05rem, calc(0.87rem + 0.89vw), 1.56rem);
+    --typo-2: clamp(1.26rem, calc(1.02rem + 1.21vw), 1.95rem);
+    --typo-3: clamp(1.51rem, calc(1.19rem + 1.62vw), 2.44rem);
+    --typo-4: clamp(1.81rem, calc(1.38rem + 2.15vw), 3.05rem);
+    --typo-5: clamp(2.18rem, calc(1.61rem + 2.85vw), 3.82rem);
 
 
    /* Type scale */

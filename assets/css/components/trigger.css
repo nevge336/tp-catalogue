@@ -1,0 +1,26 @@
+
+
+.trigger {
+  appearance: none;
+  padding: var(--space-s);
+}
+
+.trigger.menu {
+  font-size: var(--typo-0);
+  color: var(--blanc-casse);
+  z-index: 1;
+}
+
+.trigger.menu::before {
+  min-width: 11ch;
+  display: block;
+}
+
+.trigger.menu:not(:checked)::before {
+  content: "Ouvrir menu";
+}
+
+.trigger.menu:checked::before {
+  content: "Fermer menu";
+  color: black;
+}
