@@ -1,27 +1,29 @@
 .main-navigation {
     container-type: inline-size;
-
+    background-color: var(--primary-color);
 }
 
-/*Plus petit que 800*/
-@container (max-width: 800px) {
-    .main-menu {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: white;
-        opacity: 0;
-        pointer-events: none;
+
+
+/*Plus petit que 600*/
+@container (max-width: 600px) {
+
+    /* comportement quand on clic entre afficher et fermer*/
+    .main-navigation [type="checkbox"]:not(:checked)+div {
+    pointer-events: none;
+    opacity: 1;
     }
 
 
-}
+    }
 
-@container (min-width: 800px) {
+
+
+/* Plus grand que 600 */
+@container (min-width: 600px) {
     .trigger {
         display: none;
     }
+    
 
 }

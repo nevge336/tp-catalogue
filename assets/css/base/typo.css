@@ -26,3 +26,7 @@ p {
   font-family: var(--main-font);
   font-size: var(--size-0);
 }
+
+nav {
+  font-size: var(--typo-0);
+}

@@ -1,0 +1,31 @@
+
+
+/* comportement d'affichage*/
+.main-menu {
+    display: flex;
+    gap: var(--space-s);
+    /* container-type: inline-size; */
+
+ }
+
+
+
+/* Petit format jusqu'à 600px  */
+@container (max-width: 600px) {
+    .main-menu {
+        position: fixed;
+        top: 10rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--main-color);
+        opacity: 0;
+        text-align: center;
+        flex-direction: column;
+        /* pointer-events: none; */
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+}

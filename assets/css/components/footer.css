@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-l);
+}
+
+.footer > section {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer > section > div {
+    display: flex;
+    flex-direction: column;
+}

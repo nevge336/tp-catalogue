@@ -6,7 +6,7 @@
     background-color: lightgray;
 }
 
-.dropdown :where(div, ul) {
+.dropdown div {
     position: absolute;
     top: 100%;
     width: max-content;
@@ -16,11 +16,11 @@
     padding: 5px;
 }
 /* annule la spécificité */
-.dropdown:not(:hover) > :where(div, ul) {
+.dropdown:not(:hover) > div {
     pointer-events: none;
     opacity: 0;
 }
 
-.dropdown :where(div, ul) * {
+.dropdown div * {
     display: block;
 }

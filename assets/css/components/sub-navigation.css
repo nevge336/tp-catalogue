@@ -1,0 +1,24 @@
+.sub-navigation {
+    container-type: inline-size;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-navigation div {
+    display: flex;
+    gap: var(--space-m);
+    align-items: center;
+}
+
+
+@container (max-width: 900px) {
+    .sub-navigation div {
+        margin-right: var(--space-2xl)
+    }
+
+@container (max-width: 600px) {
+    .sub-navigation div {
+        display: none;
+    }
+}
+}

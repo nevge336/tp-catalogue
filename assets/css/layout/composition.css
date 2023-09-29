@@ -2,10 +2,12 @@
 body {
 	display: flex;
 	flex-direction: column;
-
+	padding: var(--space-l);
 }
 
 /* rythme */
 body > div > main > * + * {
 	margin-top: var(--gouttiere);
 }
+
+

@@ -7,13 +7,14 @@
 /* component */
 @import url(components/card.css);
 @import url(components/main-navigation.css);
-@import url(components/dropdown-menu.css);
+@import url(components/main-menu.css);
+@import url(components/dropdown.css);
 @import url(components/trigger.css);
 @import url(components/footer.css);
 @import url(components/medallion.css);
 @import url(components/logo.css);
 @import url(components/hamburger.css);
-@import url(components/secondary-navigation.css);
+@import url(components/sub-navigation.css);
 
 /* Layout */
 @import url(layout/grid.css);

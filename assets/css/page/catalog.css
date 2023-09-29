@@ -1,5 +1,6 @@
 .box {
     container-type : inline-size;
+    padding: 50px;
 }
 
 @container (min-width: 300px) {
