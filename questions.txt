@@ -1,0 +1,2 @@
+Menus : sticky, le "hamburger, 
+Text-image-hero : pourquoi pas de hover? pourquoi la transparence? 

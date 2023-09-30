@@ -1,0 +1,60 @@
+/* pour gerer l'espacement du module dans la page */
+/* .text-image-hero contient l'image,
+et un div qui contient 1 div titre et 1 div boutons */
+.text-image-hero {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	min-height: 40vmin;
+	color: var(--cream);
+	padding: var(--space-xl) 0;
+	background-color: var(--green);
+}
+
+
+/*div qui contient le titre et un div avec des boutons*/
+.text-image-hero > hgroup {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: var(--space-2xs);
+
+	z-index: 2;
+	/* padding: var(--space-l); */
+}
+
+/*le titre*/
+.text-image-hero h2{
+	font-size: var(--typo-5);
+	text-transform: uppercase;
+	color: var(--light-golden);
+	max-width: 30ch;
+	/* margin: 0 0 var(--space-m) 0; */
+
+}
+
+.text-image-hero h3 {
+	margin-top: var(--space-xs);
+}
+
+.text-image-hero time {
+	/* margin-bottom: var(--space-xs); */
+	font-weight: 500;
+	font-size: var(--typo--1);
+	margin-left: var(--space-xl);
+}
+
+
+/* C'est le div qui contient le bouton */
+.text-image-hero > div {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xs);
+	justify-content: center;
+	padding: var(--space-2xs);
+}
+
+
+
+
+

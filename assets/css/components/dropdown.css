@@ -3,7 +3,14 @@
 }
 
 .dropdown:hover {
-    background-color: lightgray;
+    background-color:var(--secondary-color);
+}
+
+.dropdown div {
+    display: block;
+    text-transform: capitalize;
+    font-size: var(--typo--1);
+    list-style: disc;
 }
 
 .dropdown div {
@@ -11,7 +18,6 @@
     top: 100%;
     width: max-content;
     max-width: 20ch;
-    background-color: lightgrey;
     display: block;
     padding: 5px;
 }
@@ -21,6 +27,6 @@
     opacity: 0;
 }
 
-.dropdown div * {
+/* .dropdown div * {
     display: block;
-}
+} */

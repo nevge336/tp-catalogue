@@ -1,0 +1,23 @@
+.breadcrumb {
+    container-type: inline-size;
+    margin-left: var(--space-l);
+    margin-bottom: var(--space-3xs);
+    cursor: pointer;
+}
+
+@container (width < 500px) {
+    .breadcrumb small {
+        display: none;
+    }
+}
+
+
+.live {
+    color: var(--redish);
+    font-size: var(--typo-2);
+    font-weight: 700;
+}
+
+.live:hover {
+    color: var(--dark-golden);
+}

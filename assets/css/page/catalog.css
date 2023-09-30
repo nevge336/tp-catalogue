@@ -1,16 +1,25 @@
 .box {
     container-type : inline-size;
-    padding: 50px;
+
 }
 
-@container (min-width: 300px) {
-    .box p {
-        font-size: 20px
-    }
+main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+main>* {
+	flex-grow: 1;
 }
 
-@container (min-width: 800px){
-    .box p {
-        font-size:30px
-    }
+main > aside {
+    flex-basis: 10ch;
+    flex-grow: 1;
+
 }
+
+main .box {
+	flex-basis: 40ch;
+	flex-grow: 5;
+}
+

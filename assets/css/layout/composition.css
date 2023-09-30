@@ -2,12 +2,21 @@
 body {
 	display: flex;
 	flex-direction: column;
+	color: var(--dark-golden);
+
+}
+
+
+main {
+	padding: var(--space-l);
+
+}
+
+header {
 	padding: var(--space-l);
 }
 
-/* rythme */
-body > div > main > * + * {
-	margin-top: var(--gouttiere);
-}
+
+  
 
 

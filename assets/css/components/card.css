@@ -4,26 +4,47 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	color: var(--blanc);
-	background-color: var(--primaire);
-    border: 1px solid black;
-}
-/*
+	/* ombre personnalisée */
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+	/* color: var(--medium-grey); */
+	font-family: var(--main-font);
 
-.carte a {
+	font-size: var(--typo--1);
+}
+
+
+/* .card a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
+} */
 
-.carte img{
-	aspect-ratio: 1;
-	width: 100%;
+.card img{
+	/* aspect-ratio: 1; */
+	/* width: 100%; */
 	inset: 0;
 	object-fit: cover;
 	min-height: 100%;
-}*/
+	border-radius: 10px;
+}
 
+.card a:hover{
+	opacity: 0.8;
+}
+
+.card hgroup {
+	padding: var(--space-3xs);
+}
+
+.card hgroup p {
+	margin-top: var(--space-2xs);
+	color: var(--light-grey);
+}
+
+.card .lot {
+	display: flex;
+	justify-content: space-between;
+}
 
 
 

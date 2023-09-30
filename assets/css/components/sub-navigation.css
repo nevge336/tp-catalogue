@@ -1,24 +1,31 @@
 .sub-navigation {
     container-type: inline-size;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
+    background-color: white;
+    /* transition: top 0.3s; */
 }
 
 .sub-navigation div {
     display: flex;
     gap: var(--space-m);
     align-items: center;
+    background-color: white;
 }
 
 
-@container (max-width: 900px) {
+/* @container (max-width: 900px) {
     .sub-navigation div {
         margin-right: var(--space-2xl)
-    }
-
-@container (max-width: 600px) {
+    } */
+ 
+    @container (max-width: 600px) {
     .sub-navigation div {
         display: none;
     }
-}
 }

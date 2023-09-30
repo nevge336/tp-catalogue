@@ -3,6 +3,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--space-l);
+    justify-content: space-around;
+    background-color: var(--green);
+    padding: var(--space-2xl);
 }
 
 .footer > section {

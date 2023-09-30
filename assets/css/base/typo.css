@@ -13,7 +13,7 @@ h2,
 h3,
 h4 {
   line-height: 1.25;
-  font-family: var(--accent-font);
+  font-family: var(--secondary-font);
 }
 
 /* Largeur maximale de toute 

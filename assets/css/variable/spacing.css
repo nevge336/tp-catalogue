@@ -28,6 +28,8 @@
   --space-s-l: clamp(1rem, calc(0.48rem + 2.61vw), 2.5rem);
   --space-xl-3xl: clamp(3rem, calc(1.43rem + 7.83vw), 7.5rem);
 
+
+  --radius: 1px;
   /*
     --space-xxl:32px;
     --space-xl:24px;
