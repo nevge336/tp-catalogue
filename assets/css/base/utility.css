@@ -1,5 +1,6 @@
 .breadcrumb {
     container-type: inline-size;
+    margin-top: var(--space-l);
     margin-left: var(--space-l);
     margin-bottom: var(--space-3xs);
     cursor: pointer;
@@ -11,7 +12,6 @@
     }
 }
 
-
 .live {
     color: var(--redish);
     font-size: var(--typo-2);
@@ -21,3 +21,10 @@
 .live:hover {
     color: var(--dark-golden);
 }
+
+
+.fa-solid, .fa-regular {
+    margin-right: var(--space-2xs);
+}
+
+

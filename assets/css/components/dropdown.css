@@ -1,6 +1,13 @@
 .dropdown {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondary-font);
+    font-size: var(--typo--2);
+    align-items: center;
+    cursor: pointer;
 }
+
 
 .dropdown:hover {
     background-color:var(--secondary-color);
@@ -8,9 +15,10 @@
 
 .dropdown div {
     display: block;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: var(--typo--1);
-    list-style: disc;
+    /* list-style: disc; */
+    text-decoration: none;
 }
 
 .dropdown div {
@@ -19,8 +27,15 @@
     width: max-content;
     max-width: 20ch;
     display: block;
-    padding: 5px;
+    padding: var(--space-l);
+    background-color: var(--main-color);
 }
+
+
+.dropdown div a:hover {
+    color: var(--redish);
+}
+
 /* annule la spécificité */
 .dropdown:not(:hover) > div {
     pointer-events: none;

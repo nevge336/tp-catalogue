@@ -5,26 +5,29 @@
 
 
 /* component */
+@import url(components/image-text-flex.css);
 @import url(components/card.css);
-@import url(components/main-navigation.css);
+@import url(components/navigation.css);
 @import url(components/main-menu.css);
 @import url(components/dropdown.css);
 @import url(components/trigger.css);
 @import url(components/footer.css);
 @import url(components/medallion.css);
-@import url(components/logo.css);
-@import url(components/hamburger.css);
-@import url(components/sub-navigation.css);
+@import url(components/top-menu.css);
 @import url(components/text-image-hero.css);
 @import url(components/image-hero.css);
 @import url(components/details.css);
 @import url(components/button.css);
+@import url(components/icone.css);
+@import url(components/netflix-bar.css);
+@import url(components/pic-img.css);
 
 /* Layout */
 @import url(layout/grid.css);
 @import url(layout/prototype.css);
 @import url(layout/general.css);
 @import url(layout/composition.css);
+@import url(layout/grid-3.css);
 
 
 /*base */
@@ -34,4 +37,4 @@
 
 /*pages */
 @import url(page/catalog.css);
-@import url(page/detail.css);
+@import url(page/timbre.css);

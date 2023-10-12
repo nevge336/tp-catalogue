@@ -1,16 +1,17 @@
+/* trigger.css ----------------------------------
+composante  */
 
 .trigger {
   appearance: none;
-  padding: var(--space-s);
+  /* padding: var(--space-s); */
 }
 
 .trigger.menu {
   font-size: var(--typo-0);
-  color: var(--blanc-casse);
+  color: var(--redish);
   z-index: 1;
-  position: fixed;
-  top: -4rem;
-  right: -5rem;
+  cursor: pointer;
+
 }
 
 .trigger.menu::before {
@@ -19,9 +20,15 @@
 }
 
 .trigger.menu:not(:checked)::before {
-  content: "x"
+  /* font-family: "Font Awesome 6.4 Free";
+  content: "\f0c9"; */
+  font: var(--fa-font-solid);
+  content: "\f0c9";
+  text-align: center;
 }
 
 .trigger.menu:checked::before {
-  content: "=";
+  font: var(--fa-font-solid);
+  content: "\f410";
+  text-align: center;
 }

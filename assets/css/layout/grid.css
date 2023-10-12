@@ -1,4 +1,4 @@
-/* grille de présentation auto-adaptative */
+/* grille pour browser ordinaire */
 .grid {
 	display: column;
 	columns: 3;
@@ -10,6 +10,7 @@
 	margin-bottom: var(--space-s-m);
 }
 
+/* safari et Firefox nightly soutienne ce css */
 @supports (grid-template-rows: masonry) {
 	.grid {
 		
@@ -22,6 +23,8 @@
 	}
 }
 
+
+/*Adaptation des colonnes selon la grosseur du container "box" */
 @container (width > 1000px ) {
 	.grid {
 		columns: 5;

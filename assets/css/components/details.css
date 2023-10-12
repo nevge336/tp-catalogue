@@ -8,11 +8,15 @@ details {
 	/* font-weight: bold; */
 	margin: -0.5em -0.5em 0;
 	padding: 0.5em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--space-xs);
   }
   
-  details[open] {
+  /* details[open] {
 	padding: 0.5em;
-  }
+  } */
   
   details[open] summary {
 	border-bottom: 1px solid #aaa;
