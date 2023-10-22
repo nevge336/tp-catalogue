@@ -12,9 +12,9 @@
         top: 0;
         background-color: var(--main-color);
         font-family: var(--secondary-font);
-        text-transform: uppercase;
-        font-weight: bold;
-
+        color: var(--light-golden);
+        /* text-transform: uppercase; */
+        /* font-weight: bold; */
 
     }
 
@@ -69,12 +69,15 @@
         cursor: pointer;
     }
 
+
     
     @media (max-width: 500px) {
         .navigation .dropdown{
             display: none;
         }
-  
+        .navigation {
+            position: relative;
+        }
     
     }
     

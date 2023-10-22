@@ -1,631 +1,738 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="description" content="Les enchères de timbres Stampee simplifie l'acquisition de timbres en tous genres">
-    <meta name="keywords" content="">
-    <meta name="author" content="Geneviève Neveu">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta
+      name="description"
+      content="Catalogue de timbres pour enchères Stampee."
+    />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Geneviève Neveu" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Stampee - catalogue timbres</title>
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <nav class="navigation">
-        <header>
-            <a href="#">
-                <img class="logo" src="./assets/img/logo-1-alt.png" alt="logo Stampee">
-            </a>
-        </header>
-        <div class="menu-action">
-            <!-- <a id="info" href="#"></a> -->
-            <div class="dropdown">
+      <header>
+        <a href="index.html">
+          <img class="logo" src="./assets/img/logo-1-alt.png" alt="logo Stampee"
+          />
+        </a>
+      </header>
+      <div class="menu-action">
+        <!-- <a id="info" href="#"></a> -->
+        <div class="dropdown">
+          <a id="enchere" href="index.html">
+            <svg
+              class="icone"
+              style="enable-background: new 0 0 64 64"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 2h11.113V0H0v13.865h2zM2 51.207H0V64h13.113v-2H2zM50.887 0v2H62v10.793h2V0zM62 62H50.887v2H64V51.207h-2zM3.48 30.413 1.9 32.008l1.584 1.584C11.346 41.449 21.673 45.377 32 45.377s20.655-3.928 28.517-11.786l1.583-1.583-1.583-1.6c-15.725-15.714-41.309-15.714-57.037.005zM32 36.679A4.684 4.684 0 0 1 27.321 32c0-2.58 2.099-4.678 4.679-4.678S36.679 29.42 36.679 32A4.684 4.684 0 0 1 32 36.679zM4.722 32l.176-.177a38.12 38.12 0 0 1 21.238-10.748A12.394 12.394 0 0 0 19.602 32c0 4.727 2.646 8.833 6.536 10.925a38.121 38.121 0 0 1-21.24-10.748l-.176-.176zm54.556 0-.175.176a38.126 38.126 0 0 1-21.24 10.748A12.394 12.394 0 0 0 44.399 32c0-4.725-2.645-8.831-6.534-10.924a38.129 38.129 0 0 1 21.236 10.746l.177.179z"
+              />
+              <path
+                d="M32 29.322A2.682 2.682 0 0 0 29.321 32c0 1.477 1.202 2.679 2.679 2.679s2.679-1.202 2.679-2.679A2.682 2.682 0 0 0 32 29.322zM19.25 7.138l1.604-1.195 1.792 2.406-1.604 1.195zM22.835 11.949l1.603-1.195 1.793 2.406-1.604 1.195zM31 10.541h2v2.5h-2zM31 4.541h2v3h-2zM37.768 13.16l1.793-2.406 1.604 1.195-1.793 2.406zM41.353 8.348l1.793-2.405 1.604 1.195-1.793 2.406zM41.354 55.652l1.604-1.195 1.792 2.405-1.604 1.195zM37.77 50.84l1.603-1.194 1.792 2.405-1.603 1.195zM31 56.459h2v3h-2zM31 50.959h2v2.5h-2zM19.25 56.862l1.793-2.405 1.603 1.195-1.793 2.405zM22.835 52.051l1.793-2.405 1.603 1.195-1.793 2.405z"
+              />
+            </svg>
+          </a>
+          <p>ENCHERES</p>
+          <div>
+            <ul>
+              <li><a href="index.html">En direct</a></li>
+              <li><a href="index.html">Toutes les ventes</a></li>
+              <li><a href="index.html">Ventes du jour</a></li>
 
-                <a id="enchere" href="#">
-                    <svg class="icone" style="enable-background:new 0 0 64 64" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h11.113V0H0v13.865h2zM2 51.207H0V64h13.113v-2H2zM50.887 0v2H62v10.793h2V0zM62 62H50.887v2H64V51.207h-2zM3.48 30.413 1.9 32.008l1.584 1.584C11.346 41.449 21.673 45.377 32 45.377s20.655-3.928 28.517-11.786l1.583-1.583-1.583-1.6c-15.725-15.714-41.309-15.714-57.037.005zM32 36.679A4.684 4.684 0 0 1 27.321 32c0-2.58 2.099-4.678 4.679-4.678S36.679 29.42 36.679 32A4.684 4.684 0 0 1 32 36.679zM4.722 32l.176-.177a38.12 38.12 0 0 1 21.238-10.748A12.394 12.394 0 0 0 19.602 32c0 4.727 2.646 8.833 6.536 10.925a38.121 38.121 0 0 1-21.24-10.748l-.176-.176zm54.556 0-.175.176a38.126 38.126 0 0 1-21.24 10.748A12.394 12.394 0 0 0 44.399 32c0-4.725-2.645-8.831-6.534-10.924a38.129 38.129 0 0 1 21.236 10.746l.177.179z"/><path d="M32 29.322A2.682 2.682 0 0 0 29.321 32c0 1.477 1.202 2.679 2.679 2.679s2.679-1.202 2.679-2.679A2.682 2.682 0 0 0 32 29.322zM19.25 7.138l1.604-1.195 1.792 2.406-1.604 1.195zM22.835 11.949l1.603-1.195 1.793 2.406-1.604 1.195zM31 10.541h2v2.5h-2zM31 4.541h2v3h-2zM37.768 13.16l1.793-2.406 1.604 1.195-1.793 2.406zM41.353 8.348l1.793-2.405 1.604 1.195-1.793 2.406zM41.354 55.652l1.604-1.195 1.792 2.405-1.604 1.195zM37.77 50.84l1.603-1.194 1.792 2.405-1.603 1.195zM31 56.459h2v3h-2zM31 50.959h2v2.5h-2zM19.25 56.862l1.793-2.405 1.603 1.195-1.793 2.405zM22.835 52.051l1.793-2.405 1.603 1.195-1.793 2.405z"/></svg>
-                </a>
-                <p>ENCHERES</p>
-                <div>
-                    <ul>
-                        <li><a href="#">En direct</a></li>
-                        <li><a href="#">Toutes les ventes</a></li>
-                        <li><a href="#">Ventes du jour</a></li>
-
-                        <li><a href="#">Ventes fermées</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="login">
-                <a href="#" alt="login">
-                    <svg class="icone " style="enable-background:new 0 0 16 16" viewBox="0 0 16 16" xml:space="preserve"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 9H4a4 4 0 0 0-4 4v3h16v-3a4 4 0 0 0-4-4z" />
-                        <path d="M12 5V4a4 4 0 0 0-8 0v1a4 4 0 0 0 8 0z" />
-                    </svg>
-
-                </a>
-                <p>connexion</p>
-            </div>
-
+              <li><a href="index.html">Ventes fermées</a></li>
+            </ul>
+          </div>
         </div>
-
-        <input type="checkbox" class="trigger menu" aria-label="ouvrir menu">
-        <div class="main-menu">
-            <a href="#" alt="login">
-             <i class="fa-regular fa-user"></i>connexion
-            </a>
-            <a href="#"><i class="fa-regular fa-newspaper"></i>Actualités</a>
-            <a href="#"><i class="fa-regular fa-gem"></i>Timbres</a>
-            <a href="#"><i class="fa-regular fa-sun"></i>Lord Stampee</a>
-            <a href="#"><i class="fa-regular fa-circle-question"></i>Aide</a>
-            <a href="#"><i class="fa-regular fa-envelope"></i>Contact</a>
+        <div class="login">
+          <a href="index.html">
+            <svg
+              class="icone"
+              style="enable-background: new 0 0 16 16"
+              viewBox="0 0 16 16"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 9H4a4 4 0 0 0-4 4v3h16v-3a4 4 0 0 0-4-4z" />
+              <path d="M12 5V4a4 4 0 0 0-8 0v1a4 4 0 0 0 8 0z" />
+            </svg>
+          </a>
+          <p>CONNEXION</p>
         </div>
+      </div>
 
+      <input type="checkbox" class="trigger menu" aria-label="ouvrir menu" />
+      <div class="main-menu">
+        <a href="#"><i class="fa-regular fa-user"></i>Connexion</a>
+        <a href="#"><i class="fa-solid fa-gavel"></i>Enchères</a>
+        <a href="#"><i class="fa-regular fa-newspaper"></i>Actualités</a>
+        <a href="#"><i class="fa-regular fa-gem"></i>Timbres</a>
+        <a href="#"><i class="fa-solid fa-glasses"></i>Lord Stampee</a>
+        <a href="#"><i class="fa-regular fa-circle-question"></i>Aide</a>
+        <a href="#"><i class="fa-regular fa-envelope"></i>Contact</a>
+      </div>
     </nav>
 
-
-
-
-
-
-    <div class="breadcrumb">
+    <!-- <div class="breadcrumb">
         <small>enchères en ligne > en direct > catalogue > enchère 545 </small>
-    </div>
+    </div> -->
 
     <!-- module héro pour afficher l'enchère -->
 
-
     <section class="text-image-hero image-hero">
-        <img src="./assets/img/textures/khalil-musa-WzFBUXQChFU-unsplash.jpg" alt="">
+      <img
+        src="./assets/img/textures/khalil-musa-WzFBUXQChFU-unsplash.jpg"
+        alt=""
+      />
 
-        <hgroup>
-            <p>enchère #545</p>
-            <h2>Timbres rares</h2>
-
-            <time datetime="2023-09-29">Ouverture 29 septembre 2023 à 12h EST</time>
-            <time>Fermeture 30 septembre</time>
-            <h3>*Collection privée Jean-Jacques : 200 lots</h3>
-
-            <!-- <p>Encanteurs - Grands-bois & Chartier</p> -->
-            <details>
-                <summary> <svg class="icone" viewBox="0 0 1024.024 1089.841" xmlns="http://www.w3.org/2000/svg"><path d="M780.36 276.117c24.738 24.756 25.25 64.725 1.135 88.84l-13.058 13.076 120.91 119.076-265.308 255.573L505.907 630.81l-398.197 398.2c-24.113 24.114-64.082 23.604-88.82-1.134-24.736-24.756-25.247-64.725-1.133-88.84L417.352 539.44 317.344 436.258l250.7-255.574 109.74 108.058 13.757-13.74c24.115-24.113 64.084-23.62 88.82 1.116zM557.236 58.11c19.692 19.692 20.107 51.516.907 70.697L265.678 421.27c-19.18 19.2-51.005 18.785-70.697-.906-19.69-19.692-20.087-51.497-.887-70.697L486.538 57.222c19.2-19.2 51.005-18.784 70.697.888zm451.754 451.754c19.69 19.692 20.087 51.497.906 70.697L717.432 873.026c-19.2 19.18-51.005 18.784-70.697-.907-19.692-19.692-20.088-51.497-.907-70.697l292.464-292.463c19.2-19.18 51.005-18.784 70.697.907z"/></svg>
-                    Encanteurs - Grands-bois & Chartier</summary>
-                666 rue Principale, St Clin-Clin, Québec, Canada
-            </details>
-            <!-- <p>666 rue Principale, St Clin-Clin, Québec, Canada</p> -->
-            <div>
-                <p class="button xs primary">Information</p>
-                <p class="button xs primary">Conditions de vente</p>
-                <p class="button xs primary">Experts</p>
-            </div>
-        </hgroup>
+      <div class="entete">
+        <h1>Enchère #545</h1>
+        <p>
+          <i class="fa-solid fa-star"></i>Début: 29 septembre 2023 à 12h EST
+        </p>
+        <p><i class="fa-solid fa-star"></i>Fin: 30 septembre</p>
+        <details>
+          <summary>
+            <i class="fa-solid fa-gavel fa-lg"></i>Encanteur - Lord Stampee
+          </summary>
+          <p>rue Principale, St Clin-Clin, Québec, Canada</p>
+        </details>
+        <!-- <p>666 rue Principale, St Clin-Clin, Québec, Canada</p> -->
         <div>
-            <a class="live" href="#">En direct</a>
-            <a class="button medium secondary" href="#">S'incrire à la vente</a>
+          <p class="button xs fourth">Information</p>
+          <p class="button xs fourth">Conditions de vente</p>
+          <p class="button xs fourth">Experts</p>
         </div>
+      </div>
+      <div>
+        <a class="live" href="#">En direct</a>
+        <a class="button medium third" href="#">S'incrire à la vente</a>
+      </div>
     </section>
 
     <!-- contenu du site   -->
-    <main>
+    <main class="gouttiere">
+      <!-- Filtres -->
 
-        <!-- Filtres -->
+      <aside class="filtre">
+        <div class="afficher-plus">
+          <details>
+            <summary><i class="fa-solid fa-plus"></i>Filtres</summary>
+            <section>
+              <label
+                ><i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="rechercher" />
+              </label>
 
-        <aside class="filtre">
-            <div class="afficher-plus">
-                <details>
-                    <summary><i class="fa-solid fa-plus"></i>Filtres</summary>
-                    <section>
-                        <div>
-                            <h2>Rechercher</h2>
-                            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        </div>
-                        <article>
-                            <h2>Mots-clés</h2>
-                            <a class="button xs fourth" href="#">x Gargouilles</a>
-                            <a class="button xs third" href="#">x Femmes</a>
-                            <a class="button xs secondary" href="#">x Fleurs</a>
-                            <a class="button xs primary" href="#">x Guerre</a>
-                            <a class="button xs fourth" href="#">x Monstres</a>
-                            <a class="button xs primary" href="#">x Avions</a>
-                            <a class="button xs third" href="#">x Accidents</a>
-                            
-                        </article>
-                        <p class="">Appliquer filtre</p>
-                    </section>
-                </details>
-            </div>
-
-
-            <div class="filtre-complet">
-                <section>
-                    <h2>Mots-clés</h2>
-                    <a class="button xs fourth" href="#">x Gargouilles</a>
-                    <a class="button xs third" href="#">x Femmes</a>
-                    <a class="button xs secondary" href="#">x Fleurs</a>
-                    <a class="button xs primary" href="#">x Guerre</a>
-                    <a class="button xs fourth" href="#">x Monstres</a>
-                    <a class="button xs primary" href="#">x Avions</a>
-                    <a class="button xs third" href="#">x Accidents</a>
-                    <p class="">appliquer</p>
-                </section>
-
-
-                <section>
-                    <h2>Thèmes</h2>
-                    <span>Anthropologie -</span>
-                    <span>Histoire -</span>
-                    <span>Sciences -</span>
-                    <span>Guerres -</span>
-                    <span>Avions -</span>
-                    <span>Arts -</span>
-                    <span>Gore -</span>
-                    <span>Féminisme -</span>
-                    <span>Célébrités -</span>
-                    <span>Cinéma -</span>
-                    <span>Animaux -</span>
-                    <span>Botanique -</span>
-                    <span>Insectes -</span>
-                    <span>Spiritualité -</span>
-                    <span>Journalisme -</span>
-                    <span>Photographie -</span>
-                    <span>Environnement -</span>
-                    <span>Économie -</span>
-                    <span>En danger</span>
-                    <span>Bravoure -</span>
-                    <span>Rêves -</span>
-                    <span>Psychédelique</span>
-                </section>
-
-                <section>
-                    <h2>Géographie</h2>
-                    <span>Asie -</span>
-                    <span>Afrique -</span>
-                    <span>Amériques -</span>
-                    <span>Europe -</span>
-                    <span>Moyen-Orient -</span>
-                    <span>Océanie -</span>
-                </section>
-                <section>
-                    <h2>Couleur dominante</h2>
-                    <span>Rouge -</span>
-                    <span>Bleu -</span>
-                    <span>Vert -</span>
-                    <span>Gris -</span>
-                    <span>Sépia -</span>
-                    <span>Jaune -</span>
-                    <span>Monochrome -</span>
-                    <span>Multicolor</span>
-                    <span></span>
-                </section>
-                <section>
-                    <h2>Valeur estimée</h2>
-                    <span>[0$ - 10$] </span>
-                    <span>[10$ - 30$] </span>
-                    <span>[30$ - 70$] </span>
-                    <span>[70$ - 120$] </span>
-                    <span>[120$ - 300$] </span>
-                    <span>[300$ - 1000$] </span>
-                    <span>[1000$ et +] </span>
-                </section>
-                <section>
-                    <h2>Enchères futures</h2>
-                    <span>Aujourd'hui </span>
-                    <span>[2023-10-22] </span>
-                    <span>[2023-11-10] </span>
-                    <span>[2023-12-07] </span>
-                </section>
-                <section>
-                    <h2>Ventes passées</h2>
-                    <span>2023 - </span>
-                    <span>2022 - </span>
-                    <span>2021 - </span>
-                </section>
-
-            </div>
-        </aside>
-
-        <!-- catalogue items (grid) -->
-        <div class="box">
-
-            <section class="grid">
-                <article class="card">
-                    <i class="fa-solid fa-heart" data-status="liked"></i>
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/girafe.jpg" alt="">
-                        </picture>
-                    </a>
-
-                    <hgroup>
-                        <h4>Lot 1 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>2000&nbsp-&nbsp3000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                        
-                    </hgroup>
-
-                </article>
-                <article class="card">
-     
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/timbres2.jpg" alt="">
-                        </picture>
-                    </a>
-
-                    <hgroup>
-                        <h4>Lot 2: double timbre du président chinois Han Lio 1934 / tirage de 100 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
- 
-                </article>
-                <article class="card">
-  
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/tourville.jpg" alt="">
-                        </picture>
-                    </a>
-
-                    <hgroup>
-                        <h4>Lot 3 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>2000&nbsp-&nbsp3000$&nbspCAD</p>
-                            <p><i class="fa-solid fa-gavel"></i>1 jour 2h restant</p>
-                        </div>
-                    </hgroup>
-           
-                    
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/chevalier.jpg" alt="">
-                        </picture>
-                    </a>
-
-                    <hgroup>
-                        <h4>Lot 4 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>2000&nbsp-&nbsp3000$</p>
-                        </div>
-                    </hgroup>
-
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/war.jpg" alt="">
-                        </picture>
-                    </a>
-
-                    <hgroup>
-                        <h4>Lot 5 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/groanland.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 6 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/one_penny.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 7 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/botanical.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 8 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/indian.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 9 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres1/1349-Setter-Dogs.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 10 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a loading="lazy" href="#">
-                        <picture>
-                            <img src="./assets/img/timbres/lot6.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 11 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/hibou.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 12 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/US_1.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 13 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/coq.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 14 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/war.jpg" alt="">
-                        </picture>
-                    </a>
-
-                    <hgroup>
-                        <h4>Lot 5 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/groanland.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 6 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/one_penny.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 7 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/botanical.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 8 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/indian.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 9 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <i class="fa-solid fa-heart" data-status="liked"></i>
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres1/1349-Setter-Dogs.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 10 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a loading="lazy" href="#">
-                        <picture>
-                            <img src="./assets/img/timbres/lot6.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 11 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/hibou.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 12 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/US_1.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 13 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-
-                </article>
-                <article class="card">
-                    <a href="#">
-                        <picture>
-                            <img loading="lazy" src="./assets/img/timbres/coq.jpg" alt="">
-                        </picture>
-                    </a>
-                    <hgroup>
-                        <h4>Lot 14 : timbre du Mozambique 1965 / 25 exemplaires</h4>
-                        <div>
-                            <p><i class="fa-solid fa-sack-dollar"></i>20000&nbsp-&nbsp30000$</p>
-                            <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
-                        </div>
-                    </hgroup>
-                </article>
+              <article>
+                <h2>Mots-clés</h2>
+                <a class="button xs fourth" href="#">x Gargouilles</a>
+                <a class="button xs third" href="#">x Femmes</a>
+                <a class="button xs secondary" href="#">x Fleurs</a>
+                <a class="button xs primary" href="#">x Guerre</a>
+                <a class="button xs fourth" href="#">x Monstres</a>
+                <a class="button xs primary" href="#">x Avions</a>
+                <a class="button xs third" href="#">x Accidents</a>
+              </article>
+              <p>Appliquer filtre</p>
             </section>
+          </details>
         </div>
-        <div class="plus">
-            <p class="button small secondary">+ Voir plus (180)</p>
-            <!-- <p class="button small secondary">1</p>
+
+        <div class="filtre-complet">
+          <section>
+            <h2>Mots-clés</h2>
+            <a class="button xs fourth" href="#">x Gargouilles</a>
+            <a class="button xs third" href="#">x Femmes</a>
+            <a class="button xs secondary" href="#">x Fleurs</a>
+            <a class="button xs primary" href="#">x Guerre</a>
+            <a class="button xs fourth" href="#">x Monstres</a>
+            <a class="button xs primary" href="#">x Avions</a>
+            <a class="button xs third" href="#">x Accidents</a>
+            <p class="">appliquer</p>
+          </section>
+
+          <section>
+            <h2>Thèmes</h2>
+            <span>Anthropologie -</span>
+            <span>Histoire -</span>
+            <span>Sciences -</span>
+            <span>Guerres -</span>
+            <span>Avions -</span>
+            <span>Arts -</span>
+            <span>Gore -</span>
+            <span>Féminisme -</span>
+            <span>Célébrités -</span>
+            <span>Cinéma -</span>
+            <span>Animaux -</span>
+            <span>Botanique -</span>
+            <span>Insectes -</span>
+            <span>Spiritualité -</span>
+            <span>Journalisme -</span>
+            <span>Photographie -</span>
+            <span>Environnement -</span>
+            <span>Économie -</span>
+            <span>En danger</span>
+            <span>Bravoure -</span>
+            <span>Rêves -</span>
+            <span>Psychédelique</span>
+          </section>
+
+          <section>
+            <h2>Géographie</h2>
+            <span>Asie -</span>
+            <span>Afrique -</span>
+            <span>Amériques -</span>
+            <span>Europe -</span>
+            <span>Moyen-Orient -</span>
+            <span>Océanie -</span>
+          </section>
+          <section>
+            <h2>Couleur dominante</h2>
+            <span>Rouge -</span>
+            <span>Bleu -</span>
+            <span>Vert -</span>
+            <span>Gris -</span>
+            <span>Sépia -</span>
+            <span>Jaune -</span>
+            <span>Monochrome -</span>
+            <span>Multicolor</span>
+            <span></span>
+          </section>
+          <section>
+            <h2>Valeur estimée</h2>
+            <span>[0$ - 10$] </span>
+            <span>[10$ - 30$] </span>
+            <span>[30$ - 70$] </span>
+            <span>[70$ - 120$] </span>
+            <span>[120$ - 300$] </span>
+            <span>[300$ - 1000$] </span>
+            <span>[1000$ et +] </span>
+          </section>
+          <section>
+            <h2>Enchères futures</h2>
+            <span>Aujourd'hui </span>
+            <span>[2023-10-22] </span>
+            <span>[2023-11-10] </span>
+            <span>[2023-12-07] </span>
+          </section>
+          <section>
+            <h2>Ventes passées</h2>
+            <span>2023 - </span>
+            <span>2022 - </span>
+            <span>2021 - </span>
+          </section>
+        </div>
+      </aside>
+
+      <!-- catalogue items (grid) -->
+      <div class="box">
+        <section class="grid">
+          <article class="card">
+            <a href="timbre.html"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/hibou.jpg"
+                alt="timbre hibou"
+            /></a>
+            <div class="group">
+              <h4>Lot 12 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <i class="fa-solid fa-heart" data-status="liked"></i>
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/girafe.jpg"
+                alt="timbre girafe"
+            /></a>
+            <div class="group">
+              <h4>Lot 1 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >2000&nbsp;;-&nbsp;;3000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/timbres2.jpg"
+                alt="timbre empereur chinois"
+            /></a>
+            <div class="group">
+              <h4>
+                Lot 2: double timbre du président chinois Han Lio 1934 / tirage
+                de 100 exemplaires
+              </h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/tourville.jpg"
+                alt="timbre tourville France"
+            /></a>
+            <div class="group">
+              <h4>Lot 3 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >2000&nbsp;-&nbsp;3000$&nbsp;CAD
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1 jour 2h restant</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/chevalier.jpg"
+                alt="timbre chevalier"
+            /></a>
+            <div class="group">
+              <h4>Lot 4 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i>2000&nbsp;-&nbsp;3000$
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/war.jpg"
+                alt="timbre de la guerre"
+            /></a>
+            <div class="group">
+              <h4>Lot 5 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/groanland.jpg"
+                alt="timbre du groanland"
+            /></a>
+            <div class="group">
+              <h4>Lot 6 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/one_penny.jpg"
+                alt="timbre one penny black"
+            /></a>
+            <div class="group">
+              <h4>Lot 7 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/botanical.jpg"
+                alt="timbre botanique"
+            /></a>
+            <div class="group">
+              <h4>Lot 8 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/indian.jpg"
+                alt="timbre usa premières nations"
+            /></a>
+            <div class="group">
+              <h4>Lot 9 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres1/1349-Setter-Dogs.jpg"
+                alt="timbre de chien"
+            /></a>
+            <div class="group">
+              <h4>Lot 10 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/lot6.jpg"
+                alt="lot de 6 timbre USA"
+            /></a>
+            <div class="group">
+              <h4>Lot 11 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/US_1.jpg"
+                alt="timbre US"
+            /></a>
+            <div class="group">
+              <h4>Lot 13 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/coq.jpg"
+                alt="timbre de coq France"
+            /></a>
+            <div class="group">
+              <h4>Lot 14 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/war.jpg"
+                alt="timbre de la guerre"
+            /></a>
+            <div class="group">
+              <h4>Lot 5 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/groanland.jpg"
+                alt="timbre du groanland"
+            /></a>
+            <div class="group">
+              <h4>Lot 6 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/one_penny.jpg"
+                alt="timbre one penny black"
+            /></a>
+            <div class="group">
+              <h4>Lot 7 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/botanical.jpg"
+                alt="timbre botanique"
+            /></a>
+            <div class="group">
+              <h4>Lot 8 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/indian.jpg"
+                alt="timbre premiere nation"
+            /></a>
+            <div class="group">
+              <h4>Lot 9 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <i class="fa-solid fa-heart" data-status="liked"></i>
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres1/1349-Setter-Dogs.jpg"
+                alt="timbre chien"
+            /></a>
+            <div class="group">
+              <h4>Lot 10 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/lot6.jpg"
+                alt="timbre lot de 6"
+            /></a>
+            <div class="group">
+              <h4>Lot 11 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/hibou.jpg"
+                alt="timbre de hibou"
+            /></a>
+            <div class="group">
+              <h4>Lot 12 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/US_1.jpg"
+                alt="timbre usa"
+            /></a>
+            <div class="group">
+              <h4>Lot 13 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="./assets/img/timbres/coq.jpg"
+                alt="timbre du coq"
+            /></a>
+            <div class="group">
+              <h4>Lot 14 : timbre du Mozambique 1965 / 25 exemplaires</h4>
+              <div>
+                <p>
+                  <i class="fa-solid fa-sack-dollar"></i
+                  >20000&nbsp;-&nbsp;30000$
+                </p>
+                <p><i class="fa-solid fa-gavel"></i>1j 02h13m02s</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="plus">
+        <p class="button small secondary">+ Voir plus (180)</p>
+        <!-- <p class="button small secondary">1</p>
             <p class="button small secondary">2</p>
             <p class="button small secondary">3</p> -->
-        </div>
-
+      </div>
     </main>
+    <!--Footer -->
     <footer class="footer">
-        <section>
-            <h2>Aide</h2>
-            <div>
-                <a href="#">Profil</a>
-                <a href="#">Placer une offre</a>
-                <a href="#">Suivre les Enchères</a>
-                <a href="#">Trouver l'enchère désirée</a>
-                <a href="#">Contacter webmestre</a>
-            </div>
-        </section>
-        <section>
-            <h2>Enchères</h2>
-            <a href="#">Termes & conditions</a>
-            <a href="#">Timbres</a>
-        </section>
+      <section>
+        <img
+          src="./assets/img/icone/binocle-red.png"
+          alt="icone de chapeau avec une lunette"
+        />
+      </section>
 
+      <section>
+        <h2>Aide</h2>
+        <div>
+          <a href="#">Profil</a>
+          <a href="#">Placer une offre</a>
+          <a href="#">Suivre les Enchères</a>
+          <a href="#">Trouver l'enchère désirée</a>
+          <a href="#">Contacter webmestre</a>
         </div>
-        <section>
+      </section>
 
+      <section>
+        <h2>Enchères</h2>
+        <a href="#">Termes & conditions</a>
+        <a href="#">Timbres</a>
+        <a href="">Authenticité</a>
+      </section>
 
-            <h2>À propos de Lord Stampee</h2>
-            <a href="#">La philatelie</a>
-            <a href="#">Biographie</a>
-            <a href="#">Histoire familiale</a>
-        </section>
+      <section>
+        <h2>À propos</h2>
+        <a href="#">Lord Stampee</a>
+        <a href="#">La philatelie</a>
+        <a href="#">Biographie</a>
+        <a href="#">Histoire familiale</a>
+      </section>
 
+      <section>
+        <img src="./assets/img/icone/abeille-pale.png" alt="icone d'abeille" />
+      </section>
+
+      <article>
+        <h2>Médias</h2>
+        <div class="media">
+          <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        </div>
+      </article>
     </footer>
-</body>
-
+  </body>
 </html>

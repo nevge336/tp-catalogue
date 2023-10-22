@@ -5,8 +5,12 @@
   /* logo seulement */
 
 	--logo: clamp(130px, 13vw, 500px);
-	--logo-petit: clam(130px, 2vw, 350px);
-  
+	--logo-petit: clamp(130px, 2vw, 350px);
+	--logo-home: clamp(300px, 20vw, 400px);
+
+  --gouttiere: clamp(5px, 3vw, 60px);
+  --space-ms: clamp(10px, 20vw, 100px);
+
   /* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
   --space-2xs: clamp(0.5rem, calc(0.46rem + 0.22vw), 0.63rem);
@@ -60,6 +64,4 @@
 	--espace-enorme: clamp(32px, 3.2vw, 64px);*/
 }
 
-.mb-1 {
-  margin-bottom: var(--space-xs);
-}
+

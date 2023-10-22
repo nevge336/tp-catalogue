@@ -7,9 +7,18 @@ body {
 }
 
 
-main {
-	padding: var(--space-l);
+.gouttiere {
+	padding: var(--gouttiere);
 
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-m);
+}
+main>* {
+	flex-grow: 1;
 }
 
 

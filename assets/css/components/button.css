@@ -5,7 +5,7 @@
     cursor: pointer;
     font-family: var(--secondary-font);
 
-
+text-align: center;
     font-size: var(--typo--1);
 }
 
@@ -47,8 +47,8 @@
 
 /*définir la couleur du button primaire ou secondaire*/
 .button.primary {
-    background-color: var(--main-color);
-    color: var(--light-golden);
+    background-color: var(--medium-green);
+    color: var(--offwhite);
 }
 
 .button.primary:hover {
@@ -57,14 +57,14 @@
 }
 
 .button.secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--cream);
     color: var(--main-color);
 
 }
 
 .button.secondary:hover {
     background-color: var(--main-color);
-    color: var(--light-green);
+    color: var(--cream);
 }
 
 .button.third {
@@ -79,8 +79,8 @@
 }
 
 .button.fourth {
-    background-color: var(--light-green);
-    color: var(--main-color);
+    background-color: var(--dark-golden);
+    color: var(--offwhite);
 
 }
 

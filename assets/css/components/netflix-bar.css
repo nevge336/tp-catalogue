@@ -5,9 +5,9 @@
 	overflow-x: auto;
 	overflow-y: visible;
 	padding: var(--space-l) var(--space-m); 
-    gap: var(--space-2xs);
+    gap: var(--space-s);
 	cursor: pointer;
-	border: red 1px dotted;
+	margin-bottom: var(--space-3xl);
 }
 
 .netflix-bar img {
@@ -30,7 +30,7 @@
 	position: relative;
 }
 
-.netflix-bar i {
+.netflix-bar .fa-heart {
 	position: absolute;
 	top: var(--space-xs);
 	left: var(--space-xs);
@@ -39,4 +39,8 @@
 
 .netflix-bar i[data-status="liked"]{
 	color: var(--golden);
+}
+
+.netflix-bar p {
+	color: var(--light-grey);
 }

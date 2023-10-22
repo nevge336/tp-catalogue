@@ -1,17 +1,17 @@
 :root{
 
-    --offwhite: #F6F6F6;
+    --offwhite: #FFFFFF;
     --cream: #FFF3CB;
 
     --light-golden: #EDD89D;
     --golden: #DCB341;
     --medium-golden: #EECF4F;
-    --dark-golden: #997E10;
-    --darker-golden: #594905;
+    --dark-golden: #8A710F;
+    --darker-golden: #8A710F;
 
 
     --light-brown: #9A5B3C;
-    --redish: #C55856; 
+    --redish: #CA6563; 
     --dark-red: #640402;
 
     --light-blue: #93BBD8;
@@ -23,7 +23,7 @@
     --dark-green: #1F2523;
 
 
-    --light-grey:  #BBBCB7;
+    --light-grey:  #76766F;
     --medium-grey: #808080 ;
     --dark-grey: #2F2F2F; 
     --anthracite: #151414;
@@ -36,7 +36,7 @@
     --main-color-dark: var(--dark-green);
 
     --script: var(--dark-golden); 
-    --secondary-color: var(--golden);
+    --secondary-color: var(--dark-golden);
     --secondary-color-light: var(--light-golden);
     --secondary-color-medium: var(--medium-golden);
     --secondary-color-dark: var(--darker-golden);

@@ -24,7 +24,7 @@
 
 /* Layout */
 @import url(layout/grid.css);
-@import url(layout/prototype.css);
+
 @import url(layout/general.css);
 @import url(layout/composition.css);
 @import url(layout/grid-3.css);
@@ -38,3 +38,4 @@
 /*pages */
 @import url(page/catalog.css);
 @import url(page/timbre.css);
+@import url(page/home.css);
